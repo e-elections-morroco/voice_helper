@@ -75,7 +75,7 @@ def perform_action():
     # Now you can access the 'langue' parameter from the JSON data
     base64_audio_data = data.get("base64data")
     provider = data.get("provider")
-    langue = data.get("langue")
+    langue = data.get("langue", "arabe") 
     host = data.get("database_ip")
 
     if langue == "":
@@ -191,4 +191,4 @@ def perform_action():
 
 if __name__ == "__main__":
     CORS(app)
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    app.run(host="0.0.0.0", port=5002, debug=False)
