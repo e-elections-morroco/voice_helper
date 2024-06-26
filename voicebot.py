@@ -170,6 +170,7 @@ def perform_action():
                 error="Command not recognized",
                 langue=langue,
                 text=myinput.lower(),
+                action="عذرًا، لا أستطيع الإجابة على هذا السؤال. يمكنني فقط الرد على الأسئلة المتعلقة بموقع الويب الخاص بنا.",
                 provider=provider,
             )
 
